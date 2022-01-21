@@ -4,10 +4,10 @@ The log is composed of entries with the following structure:
 Month, Day of the Month, Time (Hour:Minute:Seconds), Host, 'ticky:', 'INFO'/'ERROR', Content Message, Ticket Number (only in INFO entries), Username
 
 Here are a few examples:
-Jan 31 00:09:39 ubuntu.local ticky: INFO Created ticket [#4217] (mdouglas)
-Jan 31 00:16:25 ubuntu.local ticky: INFO Closed ticket [#1754] (noel)
-Jan 31 00:21:30 ubuntu.local ticky: ERROR The ticket was modified while updating (breee)
-Jan 31 00:44:34 ubuntu.local ticky: ERROR Permission denied while closing ticket (ac)
+Jan 31 00:09:39 ubuntu.local ticky: INFO Created ticket [#4217] (mdouglas)  
+Jan 31 00:16:25 ubuntu.local ticky: INFO Closed ticket [#1754] (noel)  
+Jan 31 00:21:30 ubuntu.local ticky: ERROR The ticket was modified while updating (breee)  
+Jan 31 00:44:34 ubuntu.local ticky: ERROR Permission denied while closing ticket (ac)  
 
 The regular expression will be used to first decide if the entry is an ERROR or an INFO entry. 
 If it is an INFO entry, a dictionary will keep the count of the total number of INFO entries per user, but the content message will not be used.
