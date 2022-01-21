@@ -1,6 +1,6 @@
 This script analyzes the entries in the log 'syslog.log' by using regular expressions (regex) to extract information from it.
 
-The log is composed of entries with the following structure: 
+The log is composed of entries with the following structure:  
 Month, Day of the Month, Time (Hour:Minute:Seconds), Host, 'ticky:', 'INFO'/'ERROR', Content Message, Ticket Number (only in INFO entries), Username
 
 Here are a few examples:  
