@@ -23,3 +23,4 @@ def sync_dir(directory):
 
 p = Pool(len(directories))     #create a pool of tasks to be completed
 p.map(sync_dir, directories)   #backup each subdirectory of the 'main' directory and process each as a separate thread
+
