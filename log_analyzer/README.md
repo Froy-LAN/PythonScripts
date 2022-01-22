@@ -1,4 +1,6 @@
-This script analyzes the entries in the log 'syslog.log' by using regular expressions (regex) to extract information from it.
+This script analyzes the entries in the log 'syslog.log' by using regular expressions (regex) to extract information from it
+The files 'error_message.csv' and 'user_statistics.csv' are included to show what the script should create. These can be deleted to test
+that the script works as it will create them once more. 
 
 The log is composed of entries with the following structure:  
 Month, Day of the Month, Time (Hour:Minute:Seconds), Host, 'ticky:', 'INFO'/'ERROR', Content Message, Ticket Number (only in INFO entries), Username
@@ -22,4 +24,4 @@ for the ERROR entries is organized from the highest frequency to the lowest.
 At the end, the keys and values of the dictionaries are written to comma-seprated values (CSV) documents.
 The documents may then be converted into html and viewed online or used for other purposes. 
 
-Potential improvements: Recycle code by creating functions from code used to add information to dictionaries given the test conditions. 
+Potential improvements: recycle code by creating functions from code used to add information to dictionaries given the test conditions. 
