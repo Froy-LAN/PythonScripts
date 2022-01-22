@@ -16,9 +16,8 @@ with open('example.txt', 'rb') as f: #read captured bytes from file to minimize 
 
 
 soup = BeautifulSoup(read_page, "html.parser") #process the content in order fo look for certain tags
-#print(soup)
-tables = soup.find_all('table') #captur all tables
-table = tables[2] #specify the third table, which is embedded within the second table
+table = soup.find_all('table') #captur all tables
+table = table[2] #specify the third table, which is embedded within the second table
 
 pre_subdomains = [] #pre-processed domain list
 subdomains = []
@@ -29,6 +28,6 @@ for line in pre_subdomains[4::7]:     #only add every 7th item beginning on the 
     print(line.text)                   #comment away if you do not want the shell output
     subdomains.append(str(line.text))  #add subdomains to list object for processed subdomains
 
-with open('subsomains.txt', 'w') as f: #write subdomains to file
+with open('subdomains.txt', 'w') as f: #write subdomains to file
     for item in subdomains:
         f.write(item + '\n')
