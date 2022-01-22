@@ -3,7 +3,7 @@ to enter a domain name, which will then yield any linked subdomains. The files '
 but these can be deleted since executing the script will create them again. 
 
 To request the information for a particular domain, the it is possible to use an HTTP request with the following syntax:
-https://crt.sh/q=[domain_name]
+https://crt.sh/q=domain_name
 
 Using the requests module, an HTTP request is made to store the page content then write it in bytes to the file 'example.txt' so that it is not necessary
 to constantly make requests if the scrip is executed multiple times. The script reads the information from the same file and facilitates extracting the information after
