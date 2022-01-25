@@ -60,4 +60,6 @@ with open('error_message.csv', 'w', newline='') as file:                        
     writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)    #add number error type 
     writer.writerow(["Error", "Count"])
     for key, value in sorted_error.items():
-        writer.writerow([key, value])
+        writer.writerow([key, value])  
+
+        
