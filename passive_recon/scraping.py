@@ -31,3 +31,5 @@ for line in pre_subdomains[4::7]:     #only add every 7th item beginning on the 
 with open('subdomains.txt', 'w') as f: #write subdomains to file
     for item in subdomains:
         f.write(item + '\n')  
+
+        
