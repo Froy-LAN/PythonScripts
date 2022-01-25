@@ -8,5 +8,5 @@ log_analyzer: uses regular expressions (regex) to extract information from a log
 
 passive_recon: scrapes information about a domain's potential subdomains by using BeautifulSoup and the requests module
 
-socket_encrypt: established a connection and send a short message encrypted using Fernet
+socket_encrypt: establishes a connection and send a short message encrypted using Fernet
 
