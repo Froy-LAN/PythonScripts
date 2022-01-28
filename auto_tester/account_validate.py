@@ -31,3 +31,4 @@ def validate_user(user):
 
     print("User contains valid information")
     return 0  
+  
