@@ -13,3 +13,4 @@ class ValidateAccount(unittest.TestCase):
         self.assertEqual(validate_user(testcase), expected)
 
 unittest.main()
+  
