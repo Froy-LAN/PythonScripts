@@ -30,4 +30,4 @@ def validate_user(user):
         return 1
 
     print("User contains valid information")
-    return 0
+    return 0  
