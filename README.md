@@ -1,7 +1,5 @@
 # PythonScripts
 
-Navigate into a script's respective folder to read more about it.
-
 auto_tested: uses unittest to automate testing validity of data, and the Faker module creates valid data entries that can feed the process. 
 
 backup: uses subprocess module to call Linux tool 'rsync' within python script, and speeds up the process using multiprocessing
